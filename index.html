@@ -108,7 +108,7 @@
     <!-- When you upload the image, update the src="flint-map.png" to match the exact file name -->
     <img class="map" src="flint-map.png" alt="Map of at-risk water contamination zones in Flint, Michigan" />
 
-    <h3>Narrative</h3>
+    <h3>Overview of Skills Learned</h3>
     <p>
       This map identifies the neighborhoods in Flint, Michigan that face the highest combined risk of contaminated drinking water.
       I focused on locations that met three simultaneous criteria: proximity to TRI facilities releasing over 10,000 tons of water pollutants,
@@ -139,7 +139,7 @@
     <!-- Export your LA landfill/schools map as map2.png and upload it to this repo -->
     <img class="map" src="map2.png" alt="Map of low-income census tracts in Los Angeles with schools near landfills" />
 
-    <h3>Narrative</h3>
+    <h3>Overview of Skills Learned</h3>
     <p>
       This map analyzes whether lower-income neighborhoods in Los Angeles are more likely to have schools located near methane-producing landfills.
       Using census income data, landfill polygons, and school locations, I identified schools that fall within 0.5 km of any landfill and then isolated
@@ -162,25 +162,33 @@
   </section>
 
 
-  <!-- MAP 3: PLACEHOLDER -->
+    <!-- MAP 3: CHICAGO -->
   <section class="section">
-    <h2>Map 3 – [Title of Your Third Map]</h2>
+    <h2>Map 3 – Chicago: Homicide Density and Airbnb Activity</h2>
 
-    <!-- Replace this with your third map image -->
-    <img class="map" src="map3.png" alt="Third GIS map" />
+    <!-- Export your Chicago homicide/Airbnb map as map3.png and upload it to this repo -->
+    <img class="map" src="map3.png" alt="Map of homicide density and Airbnb activity by police district in Chicago" />
 
-    <h3>Narrative</h3>
+    <h3>Overview of Skills Learned</h3>
     <p>
-      [Write a 4–6 sentence narrative here for your third map. Again, clearly
-      identify the problem, the data, and the main finding. Connect the map to a real-world
-      question or decision where possible.]
+      This map examines the relationship between homicide density and tourism activity across Chicago's police districts.
+      After projecting all layers to NAD 1983 / UTM Zone 16N, I summarized homicides per district and compared those patterns
+      to Airbnb review density and average Airbnb price. The spatial distribution shows a clear divide: south and west districts
+      experience the highest homicide densities, while downtown and northern districts have the strongest Airbnb activity and
+      highest lodging prices. These results contradict the oversimplified narrative that Chicago's crime problem is uniform across
+      the city and instead reveal a highly uneven risk landscape. The analysis demonstrates how GIS can transform raw crime and
+      business data into nuanced insight for public communication, tourism planning, and policy decisions.
     </p>
 
     <h3>GIS Tools and Skills Used</h3>
     <ul class="skills-list">
-      <li>[List the key geoprocessing tools used for this map.]</li>
-      <li>[Include any overlay, buffering, or network analysis steps you performed.]</li>
-      <li>[Mention design choices that support visual hierarchy and readability.]</li>
+      <li><strong>Projection Management:</strong> Reprojected crime, police district, and Airbnb layers to NAD&nbsp;1983 / UTM Zone 16N for consistent analysis.</li>
+      <li><strong>Select by Attributes:</strong> Filtered the crime dataset to include only homicides before summarizing patterns.</li>
+      <li><strong>Spatial Join:</strong> Counted homicides per police district and aggregated Airbnb reviews and prices to the district level.</li>
+      <li><strong>Field Calculation:</strong> Added an area (sq mi) field and computed homicide and Airbnb review densities.</li>
+      <li><strong>Summary Statistics:</strong> Calculated total reviews and average Airbnb price by district to support comparison with homicide density.</li>
+      <li><strong>Thematic Mapping &amp; Layout Design:</strong> Built graduated color choropleths for homicide and Airbnb density, created an average-price chart,
+        and exported high-quality layouts with legends, north arrows, scale bars, and consistent fonts.</li>
     </ul>
   </section>
 
