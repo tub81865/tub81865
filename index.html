@@ -5,90 +5,115 @@
   <title>Fundamentals of GIS – Final Portfolio – Peter Lundy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
+  /* Global Dark Theme */
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     margin: 0;
     padding: 0;
-    background: #f3f4f6;
-    color: #111827;
+    background: #0a0f0a; /* Deep charcoal/black */
+    color: #b7fbd9; /* Soft green text */
   }
+
+  /* Header */
   header {
-    background: linear-gradient(135deg, #111827, #1f2937, #0f766e);
-    color: #fff;
-    padding: 2.75rem 1rem 2.25rem;
+    background: linear-gradient(135deg, #000000, #022c22, #065f46);
+    color: #a7f3d0;
+    padding: 3rem 1rem 2.5rem;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   }
   header h1 {
     margin: 0 0 0.5rem;
-    font-size: 2.1rem;
-    letter-spacing: 0.03em;
+    font-size: 2.2rem;
+    letter-spacing: 0.05em;
+    color: #34d399; /* emerald green */
   }
   header p {
     margin: 0.15rem 0;
-    opacity: 0.9;
-    font-size: 0.98rem;
+    opacity: 0.85;
+    font-size: 1rem;
   }
+
+  /* Main container */
   main {
     max-width: 960px;
     margin: 2.5rem auto 3rem;
     padding: 0 1rem;
   }
+
+  /* Sections as "cards" */
   .section {
-    background: #ffffff;
+    background: #111; /* dark card */
     padding: 1.9rem 1.6rem;
     margin-bottom: 1.75rem;
     border-radius: 12px;
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
-    border-left: 4px solid #0f766e;
+    border-left: 4px solid #10b981; /* Emerald accent */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     transition: transform 0.15s ease, box-shadow 0.15s ease, border-left-color 0.15s ease;
   }
+
   .section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 26px rgba(15, 23, 42, 0.16);
-    border-left-color: #14b8a6;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    border-left-color: #34d399;
   }
+
+  /* Section headers */
   .section h2 {
     margin-top: 0;
     margin-bottom: 0.75rem;
-    font-size: 1.6rem;
-    border-bottom: 2px solid #e5e7eb;
+    font-size: 1.7rem;
+    color: #34d399; /* emerald green */
+    border-bottom: 2px solid #064e3b;
     padding-bottom: 0.4rem;
   }
+
   .section h3 {
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
+    color: #6ee7b7;
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #4b5563;
+    letter-spacing: 0.04em;
   }
+
+  /* Text */
   p {
     line-height: 1.7;
     margin: 0.4rem 0 0.9rem;
-    font-size: 0.98rem;
+    font-size: 1rem;
+    color: #d1fae5; /* lighter green for readability */
   }
+
   ul {
     margin: 0.2rem 0 0.9rem 1.2rem;
     padding-left: 0.2rem;
-    font-size: 0.95rem;
+    font-size: 0.97rem;
   }
+
   .skills-list li {
-    margin-bottom: 0.35rem;
+    margin-bottom: 0.4rem;
+    color: #a7f3d0;
   }
+
+  /* Map images */
   img.map {
     display: block;
     max-width: 100%;
     height: auto;
-    margin: 0.5rem 0 1.1rem;
+    margin: 1rem 0 1.2rem;
     border-radius: 10px;
-    border: 1px solid #e5e7eb;
+    border: 2px solid #065f46;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
   }
+
+  /* Footer */
   footer {
     text-align: center;
     font-size: 0.85rem;
-    color: #6b7280;
-    padding: 1.5rem 1rem 2.5rem;
+    color: #6ee7b7;
+    padding: 2rem 1rem 2.5rem;
+    opacity: 0.8;
   }
 </style>
 
