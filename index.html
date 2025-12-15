@@ -132,26 +132,35 @@
 
   <!-- MAP 2: PLACEHOLDER -->
   <section class="section">
-    <h2>Map 2 – [Title of Your Second Map]</h2>
+      <!-- MAP 2: LOS ANGELES -->
+  <section class="section">
+    <h2>Map 2 – Los Angeles: Schools, Landfills, and Income Inequality</h2>
 
-    <!-- Replace this with your second map image -->
-    <img class="map" src="map2.png" alt="Second GIS map" />
+    <!-- Export your LA landfill/schools map as map2.png and upload it to this repo -->
+    <img class="map" src="map2.png" alt="Map of low-income census tracts in Los Angeles with schools near landfills" />
 
     <h3>Narrative</h3>
     <p>
-      [Write a 4–6 sentence narrative here describing the problem this map addresses,
-      the key data you used, and what spatial patterns or insights the map reveals.
-      Make sure to say what question you were trying to answer and how the map helps
-      answer it.]
+      This map analyzes whether lower-income neighborhoods in Los Angeles are more likely to have schools located near methane-producing landfills.
+      Using census income data, landfill polygons, and school locations, I identified schools that fall within 0.5 km of any landfill and then isolated
+      those inside census tracts in the bottom 50% of income per capita. The results show that many of these high-risk schools are concentrated in
+      Supervisorial District&nbsp;1, reinforcing long-standing environmental justice concerns. This pattern suggests that economically disadvantaged
+      communities are disproportionately exposed to methane-related health risks compared to wealthier districts, even though rare outliers like Bel Air
+      also appear in the data. Overall, the map demonstrates how GIS can reveal inequities that would otherwise remain hidden and provides a foundation
+      for more just environmental policy.
     </p>
 
     <h3>GIS Tools and Skills Used</h3>
     <ul class="skills-list">
-      <li>[List the main tools: e.g., spatial joins, select by location, reclassification, etc.]</li>
-      <li>[Mention any projections or coordinate systems you had to manage.]</li>
-      <li>[Explain any cartographic choices you made to focus the reader’s attention.]</li>
+      <li><strong>Select by Location:</strong> Found all schools within 0.5 km of landfill polygons.</li>
+      <li><strong>Attribute Sorting &amp; Selection:</strong> Ranked census tracts by income per capita and selected the bottom 50% to isolate low-income communities.</li>
+      <li><strong>Spatial Intersection:</strong> Linked selected schools to their underlying census tracts and identified clusters in Supervisorial District&nbsp;1.</li>
+      <li><strong>Export &amp; Layer Management:</strong> Saved the final selection as a clean layer (<em>LowIncome_Tracts_near_Landfills</em>) for mapping and analysis.</li>
+      <li><strong>Contextual Comparison:</strong> Identified Bel Air as the wealthiest tract with a nearby landfill, highlighting outliers in the overall pattern.</li>
+      <li><strong>Cartographic Design:</strong> Used clear symbology, labeling, and visual hierarchy to emphasize low-income tracts containing at-risk schools.</li>
     </ul>
   </section>
+
 
   <!-- MAP 3: PLACEHOLDER -->
   <section class="section">
